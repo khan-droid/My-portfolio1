@@ -1,0 +1,156 @@
+nav{
+    display: flex;
+    flex-direction:row-reverse;
+    background-color: black;
+    color: cornsilk;
+}
+.navs{
+    padding: 5px;
+    margin: 5px;
+}
+body {
+    background-color: #2e4057;
+    margin:0;
+ }
+ 
+ .patterns {
+   height: 60vh;
+ }
+ 
+ 
+ 
+ svg text {
+   font-family: Lora;
+   letter-spacing: 10px;
+   stroke: #ffa5d8;
+   font-size: 150px;
+   font-weight: 700;
+   stroke-width: 3;
+  
+   animation: textAnimate 5s infinite alternate;
+   
+ }
+ 
+ @keyframes textAnimate {
+   0% {
+     stroke-dasharray: 0 50%;
+     stroke-dashoffset:  20%;
+     fill:hsl(189, 68%, 75%)
+ 
+   }
+   
+   100% {
+     stroke-dasharray: 50% 0;
+     stroke-dashoffstet: -20%;
+     fill: hsla(189, 68%, 75%,0%)
+   }
+   
+ }
+ .wrapper {
+    /* height: 100vh; */
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornsilk;
+  }
+  
+  .typing-demo {
+    width: 9ch;
+    animation: typing 2s steps(9), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    font-family: monospace;
+    font-size: 2em;
+  }
+  .typing-demo1 {
+    width: 67ch;
+    animation: typing 10s steps(67), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    font-family: monospace;
+    font-size: 2em;
+    /* animation-delay: 2s; */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+ 
+ /*for nav*/
+ @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.navs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navs:hover {
+	cursor: pointer;
+}
+
+
+.title {
+	font-family: "Dancing Script", cursive;
+	font-size: 2rem;
+	color: red;
+	position: relative;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: red;
+}
+.title::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 4px;
+	background-color: rgb(63, 223, 129);
+	left: 50%;
+	bottom: -10px;
+	transition: all 0.4s ease-in-out;
+}
+
+.navs:hover .title::after {
+	width: 100%;
+	left: 0;
+}
+/* para */
+.para{
+    color:crimson;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.g{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 104, 104);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
