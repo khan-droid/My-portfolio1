@@ -5,8 +5,8 @@ nav{
     color: cornsilk;
 }
 .navs{
-    padding: 5px;
-    margin: 5px;
+    padding: 0.5%;
+    margin: 0.5%;
 }
 body {
     background-color: #2e4057;
@@ -23,14 +23,25 @@ body {
    font-family: Lora;
    letter-spacing: 10px;
    stroke: #ffa5d8;
-   font-size: 150px;
+   font-size: 700%;
    font-weight: 700;
    stroke-width: 3;
-  
+   /* margin: auto 50%; */
+   /* left: 5%; */
    animation: textAnimate 5s infinite alternate;
    
  }
  
+ @media screen and (max-width: 480px) {
+   svg text {
+    letter-spacing: 5px;
+    font-size: 350%;
+   }
+   .typing-demo1{
+    font-size: 10px;
+   }
+}
+
  @keyframes textAnimate {
    0% {
      stroke-dasharray: 0 50%;
@@ -65,13 +76,16 @@ body {
     font-size: 2em;
   }
   .typing-demo1 {
-    width: 67ch;
-    animation: typing 10s steps(67), blink .5s step-end infinite alternate;
-    white-space: nowrap;
+    margin-left: 5%;
+    margin-left: 5%;
+    /* width: 67ch; */
+    animation: typing 4.5s steps(67), blink .5s step-end infinite alternate;
+    /* white-space: nowrap; */
     overflow: hidden;
     /* border-right: 3px solid; */
     font-family: monospace;
-    font-size: 2em;
+    font-size: 170%;
+    text-align: center;
     /* animation-delay: 2s; */
   }
   
@@ -91,7 +105,7 @@ body {
  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
 * {
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	margin: 0;
 	padding: 0;
 }
@@ -109,7 +123,7 @@ body {
 
 .title {
 	font-family: "Dancing Script", cursive;
-	font-size: 2rem;
+	font-size: 105%;
 	color: red;
 	position: relative;
 }
@@ -123,7 +137,7 @@ a:visited{
 	position: absolute;
 	content: "";
 	width: 0%;
-	height: 4px;
+	height: 10%;
 	background-color: rgb(63, 223, 129);
 	left: 50%;
 	bottom: -10px;
